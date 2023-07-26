@@ -1014,7 +1014,8 @@ OGRFieldType GeoJSONStringPropertyToFieldType(json_object *poObject)
         else if (bHasDate)
             return OFTDate;
         else
-            return OFTTime;
+            return OFTString
+//             return OFTTime;
         // TODO: What if both are false?
     }
     return OFTString;
